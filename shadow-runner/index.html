@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow Runner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Menu music -->
+<audio id="menuMusic" loop>
+    <source src="menu.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Game music -->
+<audio id="gameMusic" loop>
+    <source src="game.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Death sound -->
+<audio id="deathSound">
+    <source src="death.mp3" type="audio/mpeg">
+</audio>
+
+<!-- MENU -->
+<div id="menu">
+    <h1>SHADOW RUNNER</h1>
+
+    <button onclick="startGame()">START GAME</button>
+
+    <p>WASD to move • ESC to pause</p>
+    <p class="tagline">Let’s see how long you can survive.The longer You survive the harder it gets,Good Luck.</p>
+</div>
+<button id="muteBtn" onclick="toggleMute()" style="position:absolute; top:20px; right:20px;">
+     Sound: ON
+</button>
+<!-- UI -->
+<div id="ui">
+    <p id="score">Time: 0</p>
+</div>
+
+<!-- GAME AREA -->
+<div id="gameArea">
+
+    <div id="player"></div>
+    <div id="enemy"></div>
+    <div id="enemy2"></div>
+
+</div>
+
+<!-- PAUSE SCREEN -->
+<div id="pauseScreen">
+    <h1>PAUSED</h1>
+
+    <button onclick="togglePause()">RESUME</button>
+    <button onclick="goToMenu()">MAIN MENU</button>
+</div>
+
+<!-- GAME OVER -->
+<div id="gameOver">
+    <h1>GAME OVER</h1>
+    <p id="finalTime"></p>
+    <button onclick="startGame()">RESTART</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+Shadow Runner – ==
+
+The game Shadow Runner is a  browser game that I am making  using HTML, CSS, and Java. The goal  of the game is to try to survive for as long as you can while avoiding enemies thats  chase you non stop and they will chase the player around the map. The player is the glowing blue neon square and using  the W, A, S, and D keys to move around and when u press the ESC key it pauses the game and bring up a  pause menu.
+
+Right now the game has a working main menu, pause menu, it has a timer, enemy AI and a second enemy that spawns in after 30 seconds in the match to make it a bit harder. The game also has a neon cyberpunk esk style to give it a bit of a  future like  arcade game feel.
+
+I have added sound and change some ai behavior.The longer you live the harder it gets and the faster the enemies move making it twice as hard before the chagnes.
+I did not add visual effects
+
+The refrences/ sources i used to make the game:
+
+Refrences:
+
+W3Schools:https://www.w3schools.com/java/default.asp
+
+JavaScript.info:https://javascript.info/?utm_source
+
+Smooth Movement Controls In JavaScript/HTML:https://www.youtube.com/watch?v=kX18GQurDQg
+
+Enemy Follows Player [Beginner Tutorial]:https://www.youtube.com/watch?v=4Wh22ynlLyk&t=380s
+
+Bro Code YouTube Channel:https://www.youtube.com/@BroCodez/videos
+
+Chris Courses:https://www.youtube.com/@ChrisCourses/videos
+
+Franks laboratory:https://www.youtube.com/@Frankslaboratory/videos
+
+Sound:
+
+Sound Effect by <a href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=31953">freesound_community</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=31953">Pixabay</a>
+
+https://freesound.org/people/edwardszakal/sounds/787932/
+
+https://freesound.org/people/jacksonacademyashmore/sounds/414209/
+

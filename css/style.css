@@ -1,0 +1,195 @@
+/* ===============================
+   GLOBAL STYLES + BACKGROUND IMAGE
+================================= */
+
+body {
+    background: url("../images/indexbackroundimage.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    color: white;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+/* dark overlay */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 5, 16, 0.75);
+    z-index: -1;
+}
+
+/* ===============================
+   NAVBAR
+================================= */
+
+.custom-nav {
+    background: #0d0d1a;
+    border-bottom: 2px solid #00ffff;
+}
+
+.nav-link {
+    color: white !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #00ffff !important;
+}
+
+/* ===============================
+   NEON TEXT
+================================= */
+
+.neon-text {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff,
+                 0 0 10px #00ffff,
+                 0 0 20px #00ffff;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+
+.btn-cyber {
+    background: #00ffff;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-cyber:hover {
+    background: #ff00ff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ===============================
+   SECTIONS
+================================= */
+
+section {
+    padding: 80px 0;
+}
+
+/* ===============================
+   SKILL CARDS
+================================= */
+
+.skill-card {
+    padding: 30px;
+    border: 2px solid #00ffff;
+    border-radius: 15px;
+    transition: 0.3s;
+    background: #0d0d1a;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #00ffff;
+}
+
+/* ===============================
+   PROJECT CARDS
+================================= */
+
+.project-card {
+    background: #0d0d1a;
+    border: 2px solid #00ffff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #00ffff;
+    background: #0d0d1a;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .skill-card {
+        padding: 20px;
+    }
+}
+
+/* ===============================
+   PROFILE CIRCLE IMAGE (FIXED)
+================================= */
+
+.profile-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff;
+
+    /* better control than translateY */
+    position: relative;
+    top: 6px;   /* replaces transform: translateY */
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* better face positioning */
+    object-position: center 30%;
+}
